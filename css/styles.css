@@ -48,7 +48,7 @@ ul {
         }
 /* logo футер  Studio*/
 .logo-footer {
-    color: var(clr-logoftr-base-team);
+    color: var(--clr-logoftr-base-team);
 }
 /* хедер-список */
 .site-nav .link {
