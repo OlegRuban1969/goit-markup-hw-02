@@ -8,20 +8,18 @@
     --clr-txt-hdr-list: #2E2F42;
     --clr-txt-address: #434455;
     --hero-color: #FFFFFF;
+    --clr-btn-hero-h-f:  #404BBF;
     --clr-base-hero-ftr: #2E2F42;
     --clr-txt-sec-title: #2E2F42;
-    --clr-h-f: #404BBF;
+    --clr-header-h-f: #404BBF;
     --filters-btn-base: #F4F4FD;
     --filters-btn-border: #E7E9FC;
-   }
+}
 body {
     font-family: "Roboto", sans-serif;
     font-size: 16px;
     letter-spacing: 0.02em;
     color: var(--primery-text-color);
-}
-text {
-    text-transform: uppercase;
 }
 ul {
     list-style-type: none;
@@ -41,11 +39,11 @@ ul {
     text-transform: uppercase;
     text-decoration: none;
     color: var(--text-logo-base-btn-hero);
-    }
+}
 /* logo  хедер Studio*/
 .logo-header {
     color: var(--text-logo-header);
-        }
+}
 /* logo футер  Studio*/
 .logo-footer {
     color: var(--clr-logoftr-base-team);
@@ -59,21 +57,21 @@ ul {
     text-decoration: none;
     color: var(--clr-txt-hdr-list);
 }
-.site-nav .link:hover, .site-nav .link:focus
- {
-    color: var(--clr-h-f);
+.site-nav .link:hover, .site-nav .link:focus {
+    color: var(--clr-header-h-f);
 }
 /* хедер-адреса */
 .page-contacts .link {
     font-weight: 400;
     font-size: 16px;
     line-height: 1.5;
+    font-style: normal;
     text-decoration: none;
     color: var(--clr-txt-address);
 }
 .page-contacts .link:hover, .page-contacts .link:focus
 {
-    color: var(--clr-h-f);
+    color: var(--clr-header-h-f);
 }
 /* Герой */
 .hero {
@@ -100,7 +98,8 @@ ul {
     cursor: pointer;
 }
 .hero-btn:hover, .hero-btn:focus {
-    color: var(--clr-h-f);
+    color: var(--hero-color);
+    background-color: var(--clr-btn-hero-h-f);
 }           
 /* Секция 1 Feature */
 .feature-list-title {
@@ -162,6 +161,9 @@ ul {
 }
 /* ПОРТФОЛІО */
 /* Filters */
+.site-nav .current {
+    color: var(--clr-header-h-f);
+}
 .filters-btn {
     font-family: inherit;
     font-style: normal;
@@ -169,16 +171,22 @@ ul {
     font-size: 16px;
     line-height: 1.5;
     letter-spacing: 0.04em;
-    color: var(--text-logo);
+    color: var(--text-logo-base-btn-hero);
     background: var(--filters-btn-base);
     border: 1px solid var(--filters-btn-border);
     border-radius: 4px;
     cursor: pointer;
 }
 .filters-btn:hover, .filters-btn:focus {
-    background: var(--clr-h-f);
+    background: var(--clr-btn-hero-h-f);
     color: var(--clr-base);
 }
+.filters-list .current {
+    background: var(--clr-btn-hero-h-f);
+    color: var(--clr-base);
+}
+
+    
 /* Cards */
 .cards-list {
     background-color: var(--clr-base);
