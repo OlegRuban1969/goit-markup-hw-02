@@ -21,7 +21,7 @@ body {
     letter-spacing: 0.02em;
     color: var(--primery-text-color);
 }
-ul {
+.spysok {
     list-style-type: none;
 }
 .page-header {
@@ -159,11 +159,12 @@ ul {
     letter-spacing: 0.02em;
     color: var(--text-footer);
 }
+/* Активная страница */
+.site-nav .current {
+    color: var(--clr-header-h-f)
+}
 /* ПОРТФОЛІО */
 /* Filters */
-.site-nav .current {
-    color: var(--clr-header-h-f);
-}
 .filters-btn {
     font-family: inherit;
     font-style: normal;
