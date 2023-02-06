@@ -188,6 +188,9 @@ body {
 .cards-list {
     background-color: var(--clr-base);
 }
+.cards-item {
+    text-decoration: none;
+}
 .cards-list-title {
     font-weight: 500;
     font-size: 20px;
